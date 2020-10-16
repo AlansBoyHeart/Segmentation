@@ -74,7 +74,7 @@
 
 	"trainer": {
 		"epochs": 200,
-		"save_dir": "/data/wuxiaopeng/workspace/project/Segmentation/ckpt",
+		"save_dir": "/root/yangxiao1/workspace/project/Segmentation/ckpt",
 		"save_freq": 1,
 		"verbosity": 2,
 		"monitor": "valid_loss",
@@ -83,6 +83,7 @@
 
 	"visualization":{
 		"tensorboardX": true,
-		"log_dir": "/data/wuxiaopeng/workspace/project/Segmentation/ckpt"
+		"log_dir": "/root/yangxiao1/workspace/project/Segmentation/ckpt"
 	}
+
 }

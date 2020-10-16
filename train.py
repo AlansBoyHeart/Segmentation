@@ -30,6 +30,7 @@ def main(config, resume):
 	# Build model architecture
 	# model = get_instance(module_arch, 'arch', config)   #取得PSPNet模型，PSPNet的backbone是resnet18模型
 	model = models.PSPNet(**config["arch"]['args'])
+	# model = torch.nn.DataParallel(model)
 	# img_sz = config["train_loader"]["args"]["resize"]
 	img_sz = 320
 	# model.summary(input_shape=(3, img_sz, img_sz))
@@ -69,7 +70,7 @@ def main(config, resume):
 #   Main execution
 #------------------------------------------------------------------------------
 if __name__ == '__main__':
-
+	os.environ["CUDA_VISIBLE_DEVICES"] = "0"
 	# Argument parsing
 	parser = argparse.ArgumentParser(description='Train model')
 
