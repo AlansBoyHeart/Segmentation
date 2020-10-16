@@ -23,7 +23,7 @@
 			"crop_range": [0.90, 1.0],
 			"flip_hor": 0.5,
 			"rotate": 0.0,
-			"angle": 10,
+			"angle": 10.0,
 			"normalize": true,
 			"one_hot": false,
 			"shuffle": true,
