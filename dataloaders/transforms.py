@@ -67,7 +67,7 @@ def rotate_angle(image, label, angle_max):
 	if angle_max:
 		# Random angle in range [-angle_max, angle_max]
 		angle = np.random.choice(np.linspace(-angle_max, angle_max, num=21), size=())
-
+		angle = float(angle)
 		# Get parameters for affine transform
 		(h, w) = image.shape[:2]
 		(cX, cY) = (w // 2, h // 2)
