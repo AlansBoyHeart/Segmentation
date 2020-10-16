@@ -70,7 +70,7 @@ def test_iou():
 
 def same_pic__total_number():
     aaa = "E:\dataset\标签图像\label_2912"
-    bbb = "E:\dataset\Test_Images_2920"
+    bbb = "E:\dataset\标签图像\Test_Images_2920_"
     data = os.listdir(aaa)
     for j in os.listdir(bbb):
         path1 = join(bbb,j)
@@ -104,6 +104,7 @@ def zhongzhilvbo1():
 
 if __name__ == '__main__':
     # zhongzhilvbo1()
-    test_iou()
+    # test_iou()
 
+    same_pic__total_number()
 

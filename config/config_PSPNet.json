@@ -27,7 +27,7 @@
 			"normalize": true,
 			"one_hot": false,
 			"shuffle": true,
-			"batch_size": 256,
+			"batch_size": 100,
 			"n_workers": 10,
 			"pin_memory": true
 		}
@@ -44,7 +44,7 @@
 			"normalize": true,
 			"one_hot": false,
 			"shuffle": false,
-			"batch_size": 128,
+			"batch_size": 100,
 			"n_workers": 10,
 			"pin_memory": true
 		}
@@ -74,7 +74,7 @@
 
 	"trainer": {
 		"epochs": 200,
-		"save_dir": "/root/yangxiao1/workspace/project/Segmentation/ckpt",
+		"save_dir": "/root/yangxiao1/workspace/project/Segmentation/ckpt1",
 		"save_freq": 1,
 		"verbosity": 2,
 		"monitor": "valid_loss",
@@ -83,7 +83,7 @@
 
 	"visualization":{
 		"tensorboardX": true,
-		"log_dir": "/root/yangxiao1/workspace/project/Segmentation/ckpt"
+		"log_dir": "/root/yangxiao1/workspace/project/Segmentation/ckpt1"
 	}
 
 }

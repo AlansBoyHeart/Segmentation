@@ -70,7 +70,7 @@ def main(config, resume):
 #   Main execution
 #------------------------------------------------------------------------------
 if __name__ == '__main__':
-	os.environ["CUDA_VISIBLE_DEVICES"] = "0"
+	os.environ["CUDA_VISIBLE_DEVICES"] = "1"
 	# Argument parsing
 	parser = argparse.ArgumentParser(description='Train model')
 
