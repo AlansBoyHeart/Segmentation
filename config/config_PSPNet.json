@@ -45,7 +45,7 @@
 			"one_hot": false,
 			"shuffle": false,
 			"batch_size": 64,
-			"n_workers": 10,
+			"n_workers": 0,
 			"pin_memory": true
 		}
 	},
