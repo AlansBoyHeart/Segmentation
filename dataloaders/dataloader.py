@@ -20,7 +20,7 @@ from dataloaders import transforms
 #------------------------------------------------------------------------------
 class SegmentationDataLoader(object):
 	def __init__(self, pairs_file, color_channel="RGB", resize=320, padding_value=0,
-				crop_range=[0.90,1.0], flip_hor=0.5, rotate=0, angle=10, noise_std=3,   #crop_range=[0.75, 1.0],rotate=0.3,noise_std=5
+				crop_range=[0.90,1.0], flip_hor=0.5, rotate=0, angle=10.0, noise_std=3,   #crop_range=[0.75, 1.0],rotate=0.3,noise_std=5
 				normalize=True, one_hot=False, is_training=True,
 				shuffle=True, batch_size=64, n_workers=10, pin_memory=True):
 
@@ -79,7 +79,7 @@ class SegmentationDataset(Dataset):
 	where C is the number of classes.
 	"""
 	def __init__(self, pairs_file, color_channel="RGB", resize=512, padding_value=0,
-		is_training=True, noise_std=5, crop_range=[0.75, 1.0], flip_hor=0.5, rotate=0.3, angle=10,
+		is_training=True, noise_std=5, crop_range=[0.75, 1.0], flip_hor=0.5, rotate=0.3, angle=10.0,
 		one_hot=False, normalize=True, mean=[0.485,0.456,0.406], std=[0.229,0.224,0.225]):
 
 		# Get list of image and label files

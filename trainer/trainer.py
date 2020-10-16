@@ -73,7 +73,7 @@ class Trainer(BaseTrainer):
 		total_loss = 0
 		total_metrics = np.zeros(len(self.metrics))
 		n_iter = len(self.data_loader)
-		for batch_idx, (data, target) in tqdm(enumerate(self.data_loader), total=n_iter):
+		for batch_idx, (data, target) in enumerate(self.data_loader):
 			curr_iter = batch_idx + (epoch-1)*n_iter
 			data, target = data.to(self.device), target.to(self.device)
 			self.optimizer.zero_grad()
