@@ -14,7 +14,7 @@
 	"train_loader": {
 		"type": "SegmentationDataLoader",
 		"args":{
-			"pairs_file": "dataset/train_mask.txt",
+			"pairs_file": "dataset1/train_mask.txt",
 			"color_channel": "RGB",
 			"resize": 320,
 			"padding_value": 0,
@@ -36,7 +36,7 @@
 	"valid_loader": {
 		"type": "SegmentationDataLoader",
 		"args":{
-			"pairs_file": "dataset/valid_mask.txt",
+			"pairs_file": "dataset1/valid_mask.txt",
 			"color_channel": "RGB",
 			"resize": 320,
 			"padding_value": 0,
