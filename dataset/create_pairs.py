@@ -16,7 +16,7 @@ from multiprocessing import Pool, Manager
 image_files  = sorted(glob("/root/yangxiao1/dataset/Train_road_data/Train_Images/*.*"))
 #image_files += sorted(glob("/media/antiaegis/storing/datasets/HumanSeg/Supervisely/data_for_run/images/*.*"))
 
-label_files  = sorted(glob("/root/yangxiao1/dataset/Train_road_dataTrain_Labels/*.*"))
+label_files  = sorted(glob("/root/yangxiao1/dataset/Train_road_data/Train_Labels/*.*"))
 #label_files += sorted(glob("/media/antiaegis/storing/datasets/HumanSeg/Supervisely/data_for_run/labels/*.*"))
 
 assert len(image_files)==len(label_files)
